@@ -7,7 +7,7 @@ app.use(cors());
 
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://tradey-7a150.web.app/',
 
     optionsSuccessStatus: 200
   }
