@@ -1,6 +1,5 @@
  import axios from "axios";
 
- const apikeysnapshot=process.env.API_KEY_BTC_SNAPSHOT;
  const newsdatafeed= async (req,res )=>{
 
     try {
@@ -54,9 +53,8 @@ const datacandlestickdata=async(req,res)=>{
   
   const orderbookdataofpresentcrypto=async(req,res) =>{
   
-    const apikey=apikeysnapshot;
   try {
-    const response=await axios.get(`https://min-api.cryptocompare.com/data/v2/ob/l2/snapshot?api_key=`+apikey)
+    const response=await axios.get(`https://min-api.cryptocompare.com/data/v2/ob/l2/snapshot?api_key=9511b9b218c09cc2c360c48aa4a06e71e5488e8874d9aeb8eef0871864cd19d1`)
     res.status(200).json(response.data);
   } catch (error) {
     console.log(error);
