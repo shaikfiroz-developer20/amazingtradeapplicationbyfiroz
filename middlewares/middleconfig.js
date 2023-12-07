@@ -7,7 +7,7 @@ app.use(cors());
 
 
 const corsOptions = {
-    origin: 'https://tradey-7a150.web.app/',
+    origin: 'https://tradeycryptox.web.app',
 
     optionsSuccessStatus: 200
   }
