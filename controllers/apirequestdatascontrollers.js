@@ -29,8 +29,9 @@ const datacandlestickdata=async(req,res)=>{
   
   const miningearnpools=async(req,res) =>{
   
+    const apikey=process.env.ApiKey;
   try {
-     const ress=await axios.get(`https://min-api.cryptocompare.com/data/mining/pools/general?api_key=9511b9b218c09cc2c360c48aa4a06e71e5488e8874d9aeb8eef0871864cd19d1`);
+     const ress=await axios.get(`https://min-api.cryptocompare.com/data/mining/pools/general?api_key=`+apikey);
    const deta=ress.data.Data;
      res.status(200).json(deta)
   } catch (error) {
