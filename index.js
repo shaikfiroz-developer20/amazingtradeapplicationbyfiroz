@@ -15,8 +15,7 @@ import newsfeedapireq from './routes/apirequestdatas.js';
 app.use(express.json());
 
 // mongoose connection
-const mongconnection=process.env.DB_URI;
-mongoose.connect(mongconnection)
+mongoose.connect("mongodb+srv://firozshaikce10:shaikshaikshaikshaik@cluster0.dzixgar.mongodb.net/")
   .then(() => {
     console.log("connected to mongodb");
   })
