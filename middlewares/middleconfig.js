@@ -7,7 +7,7 @@ app.use(cors());
 
 
 const corsOptions = {
-    origin: 'https://tradeycryptox.web.app',
+    origin: 'https://cryptoexchangex.onrender.com/',
 
     optionsSuccessStatus: 200
   }
