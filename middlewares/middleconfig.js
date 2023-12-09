@@ -7,7 +7,7 @@ app.use(cors());
 
 
 const corsOptions = {
-    origin: 'https://cryptoexchangex.onrender.com/',
+    origin: 'https://cryptoexchangex.onrender.com',
 
     optionsSuccessStatus: 200
   }
